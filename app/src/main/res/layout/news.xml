@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/card"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Media -->
+    <ImageView
+        android:id="@+id/newsimage"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="centerCrop"
+        android:contentDescription="Abhijit"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title, secondary and supporting text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newstitle"
+            android:text="Title"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/newsdescription"
+            android:text="Description"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?android:attr/textColorSecondary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/newsdate"
+            android:text="DAte"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?android:attr/textColorSecondary"
+            />
+
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:layout_marginLeft="7dp"
+            android:id="@+id/newsshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_baseline_share_24"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
